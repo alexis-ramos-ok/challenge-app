@@ -1,0 +1,102 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "/node_modules/igniteui-angular/styles/igniteui-angular.css";
+
+.igx-grid {
+  font-family: 'Arial', sans-serif;
+  color: #cfcfcf;
+  background-color: #121212;
+}
+.igx-grid-thead__item {
+  background-color: #202020;
+}
+
+.igx-grid-th__title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+.igx-grid__td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  background-color: #545462ff;
+}
+
+.igx-grid__td:hover {
+  border: 1px solid #3700ff;
+}
+
+.igx-grid__td:active {
+  border: 1px solid #3700ff;
+  background-color: rgb(62, 62, 70);
+}
+
+.igx-grid__td-text {
+  font-size: 16px;
+  color: #cfcfcf;
+  font-weight: 600;
+}
+
+.igx-grid__td--cosy:hover {
+  background-color: #1900ff;
+}
+
+.igx-grid__tr--cosy:nth-child(odd) {
+  background-color: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 10px;
+    background-color: #333333;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
+  
+  p a {
+    display: inline;
+  }
+  
+  img, video, iframe, picture, figure {
+    max-width: 100%;
+    display: block;
+  }
+  
+  form, input, select,textarea, button, label {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }

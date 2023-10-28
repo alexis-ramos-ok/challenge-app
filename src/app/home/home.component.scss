@@ -1,0 +1,78 @@
+$primary-color: #1a73e8;
+$shadow-color: #000000;
+$secondary-color: #323232;
+$hover-color: #07004b;
+
+.home {
+  background-image: url('/assets/challenge-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 72px);
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .home-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px $shadow-color;
+    font-weight: 600;
+  }
+
+  .home-title {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px $shadow-color;
+    font-weight: 700;
+  }
+
+  .btn-register {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $hover-color;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+    }
+  }
+  @media (max-width: 768px) {
+  
+    .home-subtitle {
+       font-size:1.2rem; 
+    }
+    
+    .home-title {
+       font-size:3rem; 
+    }
+    
+    .btn-register {
+       font-size:1.2rem; 
+       padding :10px 20px; 
+    }
+    }
+}
+
+
+  
+  

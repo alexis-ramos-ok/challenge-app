@@ -1,0 +1,59 @@
+<div class="container vista3">
+  <h4 class="vista3-subtitle">Estamos acá para vos</h4>
+  <h2 class="vista3-title">Personaliza tus servicios o contáctanos</h2>
+    <div class="row">
+      <div class="col">
+        <mat-form-field appearance="fill">
+          <mat-label>Opciones</mat-label>
+          <mat-select [(value)]="selected">
+            <mat-option *ngFor="let option of options" [value]="option.value">
+              {{option.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+<!-- Formulario para la Opción 1: Selecciona tu paquete favorito -->
+<div *ngIf="selected === 'favorite'">
+  <form class="container">
+    <div class="mb-3">
+      <label for="package" class="form-label label-option1">Paquete:</label>
+      <select id="package" name="package" class="form-control">
+        <option value="basic">Pack Básico - $10/mes</option>
+        <option value="standard">Pack Estándar - $20/mes</option>
+        <option value="premium">Pack Premium - $30/mes</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Seleccionar</button>
+  </form>
+</div>
+  
+<!-- Formulario para la Opción 2: Contacto -->
+<div *ngIf="selected === 'contact'">
+  <form class="container">
+    <div class="mb-3">
+      <label for="name" class="form-label label-option2">Nombre:</label>
+      <input type="text" id="name" name="name" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label label-option2">Mensaje:</label>
+      <textarea id="message" name="message" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+<!-- Formulario para la Opción 3: Suscripción al boletín -->
+<div *ngIf="selected === 'subscribe'">
+  <form class='container'>
+    <div class='mb-3'>
+      <label for='emailSubscription' class='form-label label-option3'>Correo electrónico:</label>
+      <input type='email' id='emailSubscription' name='emailSubscription' class='form-control'>
+    </div>
+    <button type='submit' class='btn btn-primary'>Suscribirse</button>
+  </form>
+</div>
+
+</div>
+  

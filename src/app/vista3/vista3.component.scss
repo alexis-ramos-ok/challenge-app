@@ -1,0 +1,66 @@
+$background-color: #121212;
+$text-color: #ffffff;
+$primary-color: #1a73e8;
+$secondary-color: #323232;
+$border-radius: 10px;
+
+.vista3 {
+  height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .vista3-subtitle {
+    color: $text-color;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .vista3-title {
+    color: $text-color;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 20px;
+    border-radius: $border-radius;
+    width: 100%;
+    max-width: 500px;
+
+    .form-control {
+      background-color: darken($secondary-color, 10%);
+      color: $text-color;
+      border-radius: $border-radius;
+      border: none;
+
+      &:focus {
+        border-color: lighten($primary-color, 10%);
+        box-shadow: none;
+      }
+    }
+
+    .btn {
+      background-color: $primary-color;
+      color: $text-color;
+      border-radius: $border-radius;
+
+      &:hover {
+        background-color: lighten($primary-color, 10%);
+      }
+    }
+  }
+}
+.label-option1, .label-option2, .label-option3 {
+  color: gray;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .vista3 .container {
+    max-width: 100%;
+  }
+
+}

@@ -1,0 +1,49 @@
+.navbar {
+    background-color: black;
+    font-family: Arial, sans-serif;
+  
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .navbar-brand {
+        font-size: 1.5em;
+        color: gray;
+        transition: color 0.5s ease;
+    
+        &:hover {
+          color: white;
+        }
+      }
+
+  
+    .navbar-toggler {
+      border-color: gray;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='gray' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+  
+      .nav-item {
+        margin-left: 15px;
+      }
+  
+      .nav-link {
+        font-weight: 600;
+        color: gray;
+        transition: color 0.5s ease;
+  
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  
